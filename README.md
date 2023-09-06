@@ -14,3 +14,10 @@ docker run -d -v /var/run/docker.sock:/var/run/docker.sock -p 8080:8080 -p 50000
 3. set permisson
 
 docker exec -d -u root jenkins-custom-container chmod 777 /var/run/docker.sock
+
+
+using webhook
+{url}/github-webhook/
+
+add plug-in jenkins shoud restart docker containner
+plug-in -> docker
